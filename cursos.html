@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Painel Principal</title>
+    <title>Cursos</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -21,19 +21,17 @@
 
     <main>
 
-        <h1>Bem-vindo ao Portal do Candidato</h1>
+        <h2>Consultar Cursos</h2>
 
-        <div class="cards">
+        <select id="area">
+            <option value="">Escolha</option>
+            <option value="Exatas">Exatas</option>
+            <option value="Humanas">Humanas</option>
+            <option value="Natureza">Natureza</option>
+            <option value="Linguagens">Linguagens</option>
+        </select>
 
-            <div class="card" onclick="window.location.href='cursos.html'">
-                Verificar Cursos
-            </div>
-
-            <div class="card" onclick="window.location.href='inscricao.html'">
-                Fazer Inscrição
-            </div>
-
-        </div>
+        <div id="resultado"></div>
 
     </main>
 
@@ -41,7 +39,7 @@
         Portal ENEM
     </footer>
 
-    <script src="painel.js"></script>
+    <script src="cursos.js"></script>
 
 </body>
 
