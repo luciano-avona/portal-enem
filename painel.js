@@ -42,4 +42,15 @@ document.getElementById("btn").addEventListener("click", () => {
     mensagem.innerHTML =
         "Inscrição realizada para a prova de " + lingua + "!";
 
+    document.getElementById("lingua").value = "";
+    document.getElementById("estado").value = "";
+    document.getElementById("cidade").value = "";
+    document.getElementById("necessidade").value = "";
+
+    radios.forEach(radio => {
+        radio.checked = false;
+    });
+
+    campoExtra.style.display = "none";
+
 });
